@@ -1,25 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { Pensamento } from "../pensamento";
+import { PensamentoService } from "../pensamento.service";
 
 @Component({
-  selector: 'app-listar-pensamento',
-  templateUrl: './listar-pensamento.component.html',
-  styleUrls: ['./listar-pensamento.component.css'],
+    selector: "app-listar-pensamento",
+    templateUrl: "./listar-pensamento.component.html",
+    styleUrls: ["./listar-pensamento.component.css"],
 })
 export class ListarPensamentoComponent implements OnInit {
-  listaPensamentos = [
-    {
-      conteudo: 'Conteúdo mock lista-pensamentos',
-      autoria: 'Yves',
-      modelo: 'modelo2',
-    },
-    {
-      conteudo: 'Conteúdo mock lista-pensamentos 2',
-      autoria: 'Yves',
-      modelo: 'modelo1',
-    },
-  ];
+    listaPensamentos: Pensamento[] = [];
 
-  constructor() {}
+    constructor(private service: PensamentoService) {}
 
-  ngOnInit(): void {}
+    ngOnInit(): void {
+        this.service.listar().subscribe((listaPensamentos) => {
+            this.listaPensamentos = listaPensamentos;
+        });
+    }
 }
