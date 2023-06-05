@@ -7,14 +7,8 @@
       "modelo": "modelo1"
     },
     {
-      "id": 2,
-      "conteudo": "Teste 2",
-      "autoria": "Yves",
-      "modelo": "modelo2"
-    },
-    {
       "id": 3,
-      "conteudo": "Teste 3",
+      "conteudo": "Teste 2, o 3 foi excluído",
       "autoria": "Yves",
       "modelo": "modelo3"
     },
@@ -23,24 +17,6 @@
       "autoria": "Yves",
       "modelo": "modelo2",
       "id": 4
-    },
-    {
-      "conteudo": "Teste 5 pelo criar pensamento",
-      "autoria": "Yves Novamente",
-      "modelo": "modelo3",
-      "id": 5
-    },
-    {
-      "conteudo": "A melhor parte da vida de uma pessoa está nas suas amizades.",
-      "autoria": "Abraham Lincoln",
-      "modelo": "modelo1",
-      "id": 6
-    },
-    {
-      "conteudo": "Teste 5 pelo criar pensamento",
-      "autoria": "Yves Novamente",
-      "modelo": "modelo1",
-      "id": 7
     }
   ]
 }
