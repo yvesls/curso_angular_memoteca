@@ -18,6 +18,7 @@ export class CriarPensamentoComponent implements OnInit {
             conteudo: ["", Validators.compose([Validators.required, Validators.pattern(/(.|\s)*\S(.|\s)*/)])],
             autoria: ["", Validators.compose([Validators.required, Validators.minLength(3), Validators.pattern(/(.|\s)*\S(.|\s)*/)])],
             modelo: ["modelo2"],
+            favorito: [false],
         });
     }
 
